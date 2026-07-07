@@ -1,11 +1,21 @@
+:root {
+    --color-fondo: #FAFAFA;
+    --color-texto: #1A1A1A;
+    --color-acento: #FF5733;
+    --font-principal: 'Geist Pixel', sans-serif;
+}
+
 p { 
+    font-size: 16px;
+    line-height: 1.5;
+    font-weight: 400;
+    background-color: var(--color-fondo);
     text-align: center;
-    background-color: #e4e4e4;
-    color: #000000;
+    color: var(--color-texto);
 }
 
 body nav a {
-    color: #000000;
+    color: var(--color-texto);
     text-decoration: none;
     padding: 10px 15px;
 }
@@ -19,25 +29,31 @@ body nav ul {
 }
 
 body {
-    background-color: #e4e4e4;
-    font-family: Arial, sans-serif;
-    color: #333333;
+    background-color: var(--color-fondo);
+    font-family: var(--font-principal);
+    color: var(--color-texto);
 }
 
 h1 {
-    color: #333333;
+    font-size: 32px;
+    font-weight: bold;
+    font-family: var(--font-principal);
+    color: var(--color-texto);
     text-align: center;
     margin-top: 20px;
 }
 
 h2 {
-    color: #333333;
+    font-size: 24px;
+    font-weight: bold;
+    color: var(--color-texto);
     text-align: center;
     margin-top: 20px;
 }
 
 header {
-    background-color: #e4e4e4;
+    background-color: var(--color-fondo);
+
     padding: 20px;
     text-align: center;
     display: flex;
@@ -46,7 +62,7 @@ header {
 
 
 footer a {
-    color: #333333;
+    color: var(--color-acento);
     text-decoration: none;
     padding: 10px 15px;
 }
