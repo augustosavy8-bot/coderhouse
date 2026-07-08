@@ -120,3 +120,24 @@ footer ul {
     color: var(--color-texto);
     margin-top: 10px;
 }
+
+.servicios-grid {
+    display: grid;
+    gap: 20px;
+    grid-template-areas: 
+    "web"
+    "grafico"
+    "fotografia";
+}
+
+.diseño-web {grid-area: web;}
+.diseño-grafico {grid-area: grafico;}
+.fotografia {grid-area: fotografia;}
+
+@media (min-width: 1024px) {
+    .servicios-grid {
+        grid-template-areas: 
+            "web grafico fotografia";
+            grid-template-columns: 1fr 1fr 1fr;
+    }
+}
