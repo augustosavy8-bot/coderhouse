@@ -1,3 +1,8 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
 :root {
     --color-fondo: #FAFAFA;
     --color-texto: #1A1A1A;
@@ -5,7 +10,7 @@
     --font-principal: 'Geist Pixel', sans-serif;
 }
 
-p { 
+.contenido { 
     font-size: 16px;
     line-height: 1.5;
     font-weight: 400;
@@ -20,8 +25,22 @@ body nav a {
     padding: 10px 15px;
 }
 
-body nav ul {
+/* ===== HEADER ===== */
+
+.header{
+    background-color: var(--color-fondo);
+    gap: 20px;
+    align-items: center;
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav-lista {
     list-style-type: none;
+    gap: 20px;
+    align-items: center;
     margin: 0;
     padding: 0;
     display: flex;
@@ -53,15 +72,7 @@ body {
     margin-top: 20px;
 }
 
-header {
-    background-color: var(--color-fondo);
-
-    padding: 20px;
-    text-align: center;
-    display: flex;
-    justify-content: center;
-}
-
+/* ===== FOOTER ===== */
 
 footer a {
     color: var(--color-acento);
@@ -77,3 +88,35 @@ footer ul {
     justify-content: center;
 }
 
+/* ===== SECCIONES ===== */
+
+.section {
+    padding: 20px;
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+    text-align: center;
+}
+
+.servicios {
+    font-size: 24px;
+    font-weight: bold;
+    color: var(--color-texto);
+    text-align: center;
+    margin-top: 20px;
+}
+
+.foto {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+.fig {
+    text-align: center;
+    font-size: 14px;
+    color: var(--color-texto);
+    margin-top: 10px;
+}
